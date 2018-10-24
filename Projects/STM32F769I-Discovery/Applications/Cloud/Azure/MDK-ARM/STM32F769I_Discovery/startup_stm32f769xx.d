@@ -1,0 +1,1 @@
+stm32f769i_discovery\startup_stm32f769xx.o: startup_stm32f769xx.s

@@ -1,0 +1,10 @@
+stm32f769i_discovery\ecdh.o: ../../../../../../Middlewares/Third_Party/mbedTLS/library/ecdh.c
+stm32f769i_discovery\ecdh.o: ../../../../../Common/Azure/Inc/az_mbedtls_config.h
+stm32f769i_discovery\ecdh.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/check_config.h
+stm32f769i_discovery\ecdh.o: C:\Keil\ARM\ARMCC\Bin\..\include\limits.h
+stm32f769i_discovery\ecdh.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/ecdh.h
+stm32f769i_discovery\ecdh.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/ecp.h
+stm32f769i_discovery\ecdh.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/bignum.h
+stm32f769i_discovery\ecdh.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+stm32f769i_discovery\ecdh.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+stm32f769i_discovery\ecdh.o: C:\Keil\ARM\ARMCC\Bin\..\include\string.h

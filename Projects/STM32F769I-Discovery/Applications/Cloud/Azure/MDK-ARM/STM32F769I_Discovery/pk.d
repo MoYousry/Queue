@@ -1,0 +1,13 @@
+stm32f769i_discovery\pk.o: ../../../../../../Middlewares/Third_Party/mbedTLS/library/pk.c
+stm32f769i_discovery\pk.o: ../../../../../Common/Azure/Inc/az_mbedtls_config.h
+stm32f769i_discovery\pk.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/check_config.h
+stm32f769i_discovery\pk.o: C:\Keil\ARM\ARMCC\Bin\..\include\limits.h
+stm32f769i_discovery\pk.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/pk.h
+stm32f769i_discovery\pk.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/md.h
+stm32f769i_discovery\pk.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+stm32f769i_discovery\pk.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/rsa.h
+stm32f769i_discovery\pk.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/bignum.h
+stm32f769i_discovery\pk.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+stm32f769i_discovery\pk.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/ecp.h
+stm32f769i_discovery\pk.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/ecdsa.h
+stm32f769i_discovery\pk.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/pk_internal.h

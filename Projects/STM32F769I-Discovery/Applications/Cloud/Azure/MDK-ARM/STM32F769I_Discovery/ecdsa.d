@@ -1,0 +1,14 @@
+stm32f769i_discovery\ecdsa.o: ../../../../../../Middlewares/Third_Party/mbedTLS/library/ecdsa.c
+stm32f769i_discovery\ecdsa.o: ../../../../../Common/Azure/Inc/az_mbedtls_config.h
+stm32f769i_discovery\ecdsa.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/check_config.h
+stm32f769i_discovery\ecdsa.o: C:\Keil\ARM\ARMCC\Bin\..\include\limits.h
+stm32f769i_discovery\ecdsa.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/ecdsa.h
+stm32f769i_discovery\ecdsa.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/ecp.h
+stm32f769i_discovery\ecdsa.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/bignum.h
+stm32f769i_discovery\ecdsa.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+stm32f769i_discovery\ecdsa.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+stm32f769i_discovery\ecdsa.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/md.h
+stm32f769i_discovery\ecdsa.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/asn1write.h
+stm32f769i_discovery\ecdsa.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/asn1.h
+stm32f769i_discovery\ecdsa.o: C:\Keil\ARM\ARMCC\Bin\..\include\string.h
+stm32f769i_discovery\ecdsa.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/hmac_drbg.h

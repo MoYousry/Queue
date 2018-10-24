@@ -1,0 +1,9 @@
+stm32f769i_discovery\ecp_curves.o: ../../../../../../Middlewares/Third_Party/mbedTLS/library/ecp_curves.c
+stm32f769i_discovery\ecp_curves.o: ../../../../../Common/Azure/Inc/az_mbedtls_config.h
+stm32f769i_discovery\ecp_curves.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/check_config.h
+stm32f769i_discovery\ecp_curves.o: C:\Keil\ARM\ARMCC\Bin\..\include\limits.h
+stm32f769i_discovery\ecp_curves.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/ecp.h
+stm32f769i_discovery\ecp_curves.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/bignum.h
+stm32f769i_discovery\ecp_curves.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+stm32f769i_discovery\ecp_curves.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+stm32f769i_discovery\ecp_curves.o: C:\Keil\ARM\ARMCC\Bin\..\include\string.h

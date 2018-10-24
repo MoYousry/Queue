@@ -1,0 +1,9 @@
+stm32f769i_discovery\parson.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/deps/parson/parson.c
+stm32f769i_discovery\parson.o: ../../../../../../Middlewares/Third_Party/azure-iot-sdk-c/deps/parson/parson.h
+stm32f769i_discovery\parson.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+stm32f769i_discovery\parson.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+stm32f769i_discovery\parson.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32f769i_discovery\parson.o: C:\Keil\ARM\ARMCC\Bin\..\include\string.h
+stm32f769i_discovery\parson.o: C:\Keil\ARM\ARMCC\Bin\..\include\ctype.h
+stm32f769i_discovery\parson.o: C:\Keil\ARM\ARMCC\Bin\..\include\math.h
+stm32f769i_discovery\parson.o: C:\Keil\ARM\ARMCC\Bin\..\include\errno.h
