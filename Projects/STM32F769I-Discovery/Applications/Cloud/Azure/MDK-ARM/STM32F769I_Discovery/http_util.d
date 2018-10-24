@@ -71,3 +71,4 @@ stm32f769i_discovery\http_util.o: ../../../../../../Middlewares/Third_Party/Free
 stm32f769i_discovery\http_util.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 stm32f769i_discovery\http_util.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 stm32f769i_discovery\http_util.o: ..\..\..\..\..\Common\Shared\Inc\http_util.h
+stm32f769i_discovery\http_util.o: ..\..\..\..\..\Common\Shared\Inc\msg.h

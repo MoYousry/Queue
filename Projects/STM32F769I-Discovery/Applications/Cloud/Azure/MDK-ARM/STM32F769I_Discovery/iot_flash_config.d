@@ -71,3 +71,4 @@ stm32f769i_discovery\iot_flash_config.o: ../../../../../../Middlewares/Third_Par
 stm32f769i_discovery\iot_flash_config.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 stm32f769i_discovery\iot_flash_config.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 stm32f769i_discovery\iot_flash_config.o: ..\..\..\..\..\Common\Shared\Inc\rfu.h
+stm32f769i_discovery\iot_flash_config.o: ..\..\..\..\..\Common\Shared\Inc\msg.h

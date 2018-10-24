@@ -70,3 +70,4 @@ stm32f769i_discovery\timedate.o: ../../../../../../Middlewares/Third_Party/FreeR
 stm32f769i_discovery\timedate.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 stm32f769i_discovery\timedate.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 stm32f769i_discovery\timedate.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+stm32f769i_discovery\timedate.o: ..\..\..\..\..\Common\Shared\Inc\msg.h

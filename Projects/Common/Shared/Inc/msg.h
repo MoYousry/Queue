@@ -44,6 +44,7 @@
   */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
+#define MSG_DEBUG
 #ifndef __MSG_H__
 #define __MSG_H__
 
@@ -75,7 +76,6 @@
 #define msg_debug(...)    \
 	{\
 	printf("DEBUG:   %s L#%d ", __func__, __LINE__);  \
-	printf(__VA_ARGS__); \
 	}
 #else
 #define msg_debug(...)
