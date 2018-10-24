@@ -71,6 +71,7 @@ stm32f769i_discovery\net.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/S
 stm32f769i_discovery\net.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 stm32f769i_discovery\net.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 stm32f769i_discovery\net.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+stm32f769i_discovery\net.o: ..\..\..\..\..\Common\Shared\Inc\msg.h
 stm32f769i_discovery\net.o: ../../../../../Common/Azure/Inc/az_mbedtls_config.h
 stm32f769i_discovery\net.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/check_config.h
 stm32f769i_discovery\net.o: C:\Keil\ARM\ARMCC\Bin\..\include\limits.h

@@ -73,7 +73,9 @@ static void RTC_Init(void);
 static void Button_ISR(void);
 static void cloud_test(void const *arg);
 static void MainThread(void const * argument);
-
+uint16_t recived_data;
+QueueHandle_t xQueue1;
+uint16_t to_send;
 /* Private functions ---------------------------------------------------------*/
 
 /**
@@ -98,6 +100,7 @@ int main(void)
   Periph_Config();
   
   BSP_LED_Init(LED_GREEN);
+  BSP_LED_Init(LED_RED);
   BSP_PB_Init(BUTTON_USER, BUTTON_MODE_EXTI);
   
   /* RNG init function */
@@ -117,14 +120,24 @@ int main(void)
 #endif
   
    /* Init thread */
-  osThreadDef(Start, MainThread, osPriorityBelowNormal, 0, configMINIMAL_STACK_SIZE + 1000);
+ // osThreadDef(Start, MainThread, osPriorityBelowNormal, 0, configMINIMAL_STACK_SIZE + 1000);
   
-  osThreadCreate (osThread(Start), NULL);
+  //osThreadCreate (osThread(Start), NULL);
   
-  osThreadDef(Handle1, vTask1_Handler, osPriorityAboveNormal, 0, configMINIMAL_STACK_SIZE + 500);
-  osThreadCreate (osThread(Handle1), NULL);
-  osThreadDef(Handle2, vTask2_Handler, osPriorityNormal, 0, configMINIMAL_STACK_SIZE + 500);
-  osThreadCreate (osThread(Handle2), NULL);
+ // osThreadDef(Handle1, vTask1_Handler, osPriorityNormal, 0, configMINIMAL_STACK_SIZE + 500);
+ // osThreadCreate (osThread(Handle1), NULL);
+  //osThreadDef(Handle2, vTask2_Handler, osPriorityNormal, 0, configMINIMAL_STACK_SIZE + 500);
+  
+  xQueue1 =xQueueCreate(5, sizeof(uint16_t));
+  if(xQueue1)
+  {
+    xTaskCreate(vQueue1_Handler,"Sender1",200,(void *) 100,1,NULL );
+      xTaskCreate(vQueue1_Handler,"Sender2",200,(void *) 200,1,NULL );
+      xTaskCreate(vQueue1_Handler,"Sender3",200,(void *) 400,1,NULL );
+  } 
+      xTaskCreate(vQueue1_Reciver ,"Receiver",500,NULL,2,NULL);
+  
+  //osThreadCreate (osThread(Handle2), NULL);
   
   /* Start scheduler */
   osKernelStart();
@@ -237,10 +250,12 @@ void Led_SetState(bool on)
   if (on == true)
   {
     BSP_LED_On(LED_GREEN);
+    
   }
   else
   {
-    BSP_LED_Off(LED_GREEN);
+    BSP_LED_Off(LED_RED);
+    
   }
 }
 
@@ -494,10 +509,58 @@ void Error_Handler(void)
 }
 void vTask1_Handler()
 {
+  uint16_t num_of_ticks = xTaskGetTickCount();
   
+  for( ;; )
+  {
+   // printf("task1 running\n");
+     msg_info("\r\n Starting  Thread1...\n");
+   BSP_LED_Off(LED_GREEN);    
+    vTaskDelay(100);
+    BSP_LED_On(LED_GREEN); 
+    num_of_ticks = xTaskGetTickCount();
+  } 
 } 
 void vTask2_Handler()
 {
+ 
+   for( ;; )
+  {
+   // printf("task2 running\n");
+     msg_info("\r\n Thread2...\n");
+    BSP_LED_On(LED_RED);
+    vTaskDelay(100);
+    BSP_LED_Off(LED_RED);
+  }  
   
 } 
+void vQueue1_Handler(void *parmeters)
+{
+   to_send =(uint16_t) parmeters ;
+  long xpass = xQueueSend(xQueue1,&to_send,0);
+  
+  for( ;; )
+  {
+      
+  } 
+} 
+void vQueue1_Reciver(void *parmeters)
+{
+  
+  portBASE_TYPE pPass;
+  for( ;; )
+  {
+    pPass = xQueueReceive(xQueue1, &recived_data,50);
+    if(pPass)
+    {
+      printf("data recived from the queue");
+    }
+    else
+    {
+      printf("failed to receive from the queue");
+    } 
+  }  
+  
+}  
+
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

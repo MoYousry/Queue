@@ -71,6 +71,7 @@ stm32f769i_discovery\net_tcp_lwip.o: ../../../../../../Middlewares/Third_Party/F
 stm32f769i_discovery\net_tcp_lwip.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 stm32f769i_discovery\net_tcp_lwip.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 stm32f769i_discovery\net_tcp_lwip.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+stm32f769i_discovery\net_tcp_lwip.o: ..\..\..\..\..\Common\Shared\Inc\msg.h
 stm32f769i_discovery\net_tcp_lwip.o: ../../../../../Common/Azure/Inc/az_mbedtls_config.h
 stm32f769i_discovery\net_tcp_lwip.o: ../../../../../../Middlewares/Third_Party/mbedTLS/include/mbedtls/check_config.h
 stm32f769i_discovery\net_tcp_lwip.o: C:\Keil\ARM\ARMCC\Bin\..\include\limits.h

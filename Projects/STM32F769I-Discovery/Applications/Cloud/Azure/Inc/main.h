@@ -106,7 +106,8 @@ extern RTC_HandleTypeDef hrtc;
 extern net_hnd_t         hnet;
 
 extern const user_config_t *lUserConfigPtr;
-
+void vQueue1_Handler(void *parmeters);
+void vQueue1_Reciver(void *parmeters);
 #ifdef __cplusplus
 }
 #endif

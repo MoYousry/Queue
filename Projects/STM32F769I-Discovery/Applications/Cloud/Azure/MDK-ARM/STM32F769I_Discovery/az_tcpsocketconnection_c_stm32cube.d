@@ -55,6 +55,7 @@ stm32f769i_discovery\az_tcpsocketconnection_c_stm32cube.o: C:\Keil\ARM\ARMCC\Bin
 stm32f769i_discovery\az_tcpsocketconnection_c_stm32cube.o: ..\..\..\..\..\Common\Shared\Inc\timedate.h
 stm32f769i_discovery\az_tcpsocketconnection_c_stm32cube.o: ../Inc/flash.h
 stm32f769i_discovery\az_tcpsocketconnection_c_stm32cube.o: ..\..\..\..\..\Common\Shared\Inc\iot_flash_config.h
+stm32f769i_discovery\az_tcpsocketconnection_c_stm32cube.o: ..\..\..\..\..\Common\Shared\Inc\msg.h
 stm32f769i_discovery\az_tcpsocketconnection_c_stm32cube.o: ..\..\..\..\..\Common\Shared\Inc\cloud.h
 stm32f769i_discovery\az_tcpsocketconnection_c_stm32cube.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 stm32f769i_discovery\az_tcpsocketconnection_c_stm32cube.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h

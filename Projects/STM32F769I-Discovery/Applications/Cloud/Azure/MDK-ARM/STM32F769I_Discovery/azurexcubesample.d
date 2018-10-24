@@ -113,6 +113,7 @@ stm32f769i_discovery\azurexcubesample.o: ..\..\..\..\..\Common\Shared\Inc\versio
 stm32f769i_discovery\azurexcubesample.o: ..\..\..\..\..\Common\Shared\Inc\timedate.h
 stm32f769i_discovery\azurexcubesample.o: ../Inc/flash.h
 stm32f769i_discovery\azurexcubesample.o: ..\..\..\..\..\Common\Shared\Inc\net.h
+stm32f769i_discovery\azurexcubesample.o: ..\..\..\..\..\Common\Shared\Inc\msg.h
 stm32f769i_discovery\azurexcubesample.o: ..\..\..\..\..\Common\Shared\Inc\cloud.h
 stm32f769i_discovery\azurexcubesample.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 stm32f769i_discovery\azurexcubesample.o: ../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
