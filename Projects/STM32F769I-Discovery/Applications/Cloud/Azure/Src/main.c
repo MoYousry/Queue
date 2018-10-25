@@ -123,6 +123,7 @@ int main(void)
  // osThreadDef(Start, MainThread, osPriorityBelowNormal, 0, configMINIMAL_STACK_SIZE + 1000);
   
   //osThreadCreate (osThread(Start), NULL);
+<<<<<<< HEAD
   
  // osThreadDef(Handle1, vTask1_Handler, osPriorityNormal, 0, configMINIMAL_STACK_SIZE + 500);
  // osThreadCreate (osThread(Handle1), NULL);
@@ -137,6 +138,22 @@ int main(void)
   } 
       xTaskCreate(vQueue1_Reciver ,"Receiver",500,NULL,2,NULL);
   
+=======
+  
+ // osThreadDef(Handle1, vTask1_Handler, osPriorityNormal, 0, configMINIMAL_STACK_SIZE + 500);
+ // osThreadCreate (osThread(Handle1), NULL);
+  //osThreadDef(Handle2, vTask2_Handler, osPriorityNormal, 0, configMINIMAL_STACK_SIZE + 500);
+  
+  xQueue1 =xQueueCreate(5, sizeof(uint16_t));
+  if(xQueue1)
+  {
+    xTaskCreate(vQueue1_Handler,"Sender1",200,(void *) 100,1,NULL );
+      xTaskCreate(vQueue1_Handler,"Sender2",200,(void *) 200,1,NULL );
+      xTaskCreate(vQueue1_Handler,"Sender3",200,(void *) 400,1,NULL );
+  } 
+      xTaskCreate(vQueue1_Reciver ,"Receiver",500,NULL,2,NULL);
+  
+>>>>>>> feature
   //osThreadCreate (osThread(Handle2), NULL);
   
   /* Start scheduler */
@@ -537,27 +554,50 @@ void vTask2_Handler()
 void vQueue1_Handler(void *parmeters)
 {
    to_send =(uint16_t) parmeters ;
+<<<<<<< HEAD
   long xpass = xQueueSend(xQueue1,&to_send,0);
   
   for( ;; )
   {
       
+=======
+  long xpass; 
+  bool Flag_Sending;
+  for( ;; )
+  {
+      if(xpass=xQueueSend(xQueue1,&to_send,0))
+        Flag_Sending = 1;
+      else
+        Flag_Sending =0;
+>>>>>>> feature
   } 
 } 
 void vQueue1_Reciver(void *parmeters)
 {
   
   portBASE_TYPE pPass;
+<<<<<<< HEAD
+=======
+  bool Flag_Receiving;
+>>>>>>> feature
   for( ;; )
   {
     pPass = xQueueReceive(xQueue1, &recived_data,50);
     if(pPass)
     {
+<<<<<<< HEAD
       printf("data recived from the queue");
     }
     else
     {
       printf("failed to receive from the queue");
+=======
+     Flag_Receiving =1;
+    }
+    else
+    {
+      Flag_Receiving =0;
+>>>>>>> feature
     } 
   }  
   
